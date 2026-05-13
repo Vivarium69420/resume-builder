@@ -1,0 +1,172 @@
+{
+  "selectedTemplate": 1,
+  "headings": {
+    "work": "Experience",
+    "skills": "Skills",
+    "awards": "Awards",
+    "education": "Education",
+    "projects": "Projects"
+  },
+  "basics": {
+    "name": "Mai Hai Dang",
+    "email": "vivarium69420@gmail.com",
+    "phone": "0988 998 739",
+    " s": "https://www.linkedin.com/in/vivarium69420",
+    "location": {
+      "address": "Hanoi, VN"
+    },
+    "website": "github.com/vivarium69420",
+    "summary": "Embedded Software Engineer with hands-on experience in automotive systems and AUTOSAR-based development. Skilled in ECU communication, diagnostic services (UDS/DCM), and in-vehicle networks including CAN, LIN, and Ethernet. Experienced in developing, testing, and validating software across IVI (In-Vehicle Infotainment) and powertrain platforms using industry tools such as Vector CANoe/CANalyzer and ETAS INCA. Strong understanding of ASPICE processes and automotive standards including ISO 26262 and MISRA C."
+  },
+  "education": [
+    {
+      "startDate": "Oct 2021",
+      "endDate": "Dec 2024",
+      "gpa": "3.5",
+      "institution": "University of Science and Technology of Hanoi (USTH)",
+      "location": "18 Hoang Quoc Viet, Cau Giay, Hanoi",
+      "studyType": "Bachelor",
+      "area": "Information and Communication Technology"
+    }
+  ],
+  "work": [
+    {
+      "highlights": [
+        "Designed, implemented, and maintained IVI systems in automotive platforms application-level features including media, navigation, connectivity, Head-up Display (HUD), and Meter Display.",
+        "Debugged, tested, and validated software on real hardware, debug boards, and simulators to improve stability and reduce defect rates. Tools used: Vector CANalyzer, Vector CANoe, and Green Hills MULTI.",
+        "Produced and maintained ASPICE SWE.1–SWE.5 compliant documentation for software modules, including software requirements, architectural and detailed design artifacts, integration documentation, and verification reports to ensure full lifecycle traceability.",
+        "Work with CAN, Ethernet, LIN and other automotive communication protocols for module implementation.",
+        "Ensured compliance with ASPICE SWE process standards; actively contributed in Agile and Scrum workflows."
+      ],
+      "company": "FPT Software",
+      "position": "Embedded Software Engineer",
+      "location": "Hoa Lac Hi-Tech Park, Thach That, Hanoi, Vietnam",
+      "startDate": "Dec 2024",
+      "endDate": "Present"
+    },
+    {
+      "website": "",
+      "startDate": "Apr 2024",
+      "endDate": "Sep 2024",
+      "highlights": [
+        "Projects: Vinfast VF3/VF8/VF9 EV Powertrain System.",
+        "Developing AUTOSAR-compliant (R4.4.0) embedded software for diagnostic communication on CAN bus and DCM in the Powertrain System. Configuring CAN gateways to enable in-vehicle communication to other ECUs such as the chasis and body control.",
+        "Creating automated functional software testing packages using Tracetonic ecu.test, ETAS INCA, and Vector CANalyzer. Conducting unit testing with Testwell CTC++. Performing integration test for new software components.",
+        "Following strictly ASPICE for SWE process group. Adhering to ISO 14229-1:2020, ISO 11898-1:2024, ISO 26262-2:2018, ISO 15765-2:2024, MISRA C:2024 and ASAM AE MDX, MCD-2 MC."
+      ],
+      "company": "Bosch Global Software Technologies Co., Ltd (BGSV)",
+      "position": "Embedded Software Engineer ",
+      "location": "29 Lieu Giai, Ba Dinh, Hanoi"
+    },
+    {
+      "highlights": [
+        "Effectively managing a team of 20 individuals with diverse scientific backgrounds. Securing recognition as the university's top contributor to student academic success.",
+        "Offering comprehensive academic support to ICT students, focusing on core concepts like data structures and algorithms, OOP, software engineering, networking, web development, AI,  and more."
+      ],
+      "company": "USTH Learning Support",
+      "position": "Operations Manager and ICT Specialist",
+      "location": "18 Hoang Quoc Viet, Cau Giay, Hanoi",
+      "startDate": "Dec 2021",
+      "endDate": "Oct 2023"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Java",
+        "Python",
+        "C/ C++",
+        "JavaScript/ TypeScript",
+        "Bash"
+      ],
+      "name": "Programming Language"
+    },
+    {
+      "keywords": [
+        "AUTOSAR",
+        "React",
+        "Android SDK",
+        "Scikit-learn"
+      ],
+      "name": "Frameworks"
+    },
+    {
+      "keywords": [
+        "MariaDB",
+        "MySQL",
+        "MongoDB"
+      ],
+      "name": "Databases"
+    },
+    {
+      "keywords": [
+        "English (B2)",
+        "French (A2)",
+        "Vietnamese (Native)"
+      ],
+      "name": "Natural Languages"
+    }
+  ],
+  "projects": [
+    {
+      "url": "",
+      "keywords": [
+        "| C, RTA-CAR"
+      ],
+      "name": "Embedded Software for Control and Communication in Powertrain System",
+      "description": "Configuring the base software modules of AUTOSAR to enable CAN communication, integrate UDS services with the DCM module, and manage non-volatile memory using NVRAM Manager. Implementing the application software for data processing of DID used by RDBI and WDBI services."
+    },
+    {
+      "keywords": [
+        "/ React, Typescript, Vite, Tailwind"
+      ],
+      "name": "Web Application for Model Management for Crop Nutrition",
+      "description": "Online platform interface for bioinformatic scientists to share machine learning models and datasets for predicting NPK values for rice crop using hyperspectral images and reflectance data. Support train and inference directly on the website.",
+      "url": "github.com/ChloroProject-2023/dashboard-UI"
+    },
+    {
+      "keywords": [
+        "Python"
+      ],
+      "name": "Taxi Information Management System",
+      "description": "A straightforward system for management of customers, invoices, vehicles, and taxi drivers information.",
+      "url": "github.com/Vivarium69420/Taxi-Information-Management-System"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Bachelor's Degree with Distinction",
+      "date": "Dec 2024",
+      "awarder": "USTH",
+      "summary": "Bachelor's degree with Distinction in Information and Communication Technology."
+    },
+    {
+      "title": "Internship Scholarship",
+      "date": "Oct 2023",
+      "awarder": "USTH",
+      "summary": "Level: A2, second-highest level. Top 6 percent of the university."
+    },
+    {
+      "title": "Merit Scholarship B1",
+      "date": "Oct 2022",
+      "awarder": "USTH",
+      "summary": "Level A5. Top 10 percent of the university's General Education Department."
+    },
+    {
+      "title": "Merit Scholarship B2",
+      "date": "Oct 2023",
+      "awarder": "USTH",
+      "summary": "Level A5. Top 8 percent of the university's Information and Communication Technology Department."
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "awards",
+    "projects",
+    "skills"
+  ]
+}

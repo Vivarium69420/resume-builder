@@ -1,0 +1,199 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontspec}
+\usepackage{xcolor}
+
+%====================
+% Font & Layout
+%====================
+
+\setmainfont{Times New Roman}
+
+\setlength{\parindent}{0pt}
+\linespread{0.96}
+
+\tolerance=1500
+\emergencystretch=1em
+\hyphenpenalty=800
+\hbadness=10000
+
+\pagenumbering{gobble}
+
+%====================
+% Keyword Highlight
+%====================
+
+\newcommand{\keyword}[1]{\textbf{\textsc{#1}}}
+
+%====================
+% Section Styling
+%====================
+
+\titleformat{\section}
+{\large\scshape}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\section}
+{0pt}
+{6pt}
+{3pt}
+
+%====================
+% Document
+%====================
+
+\begin{document}
+
+%====================
+% Header
+%====================
+
+\begin{center}
+    {\LARGE \textbf{ {{ basics.name }} }} \\
+    \vspace{4pt}
+
+    {{ basics.location.address }}
+    $\cdot$
+    {{ basics.email }}
+    $\cdot$
+    {{ basics.phone }}
+    $\cdot$
+    \href{https://{{ basics.website }}}{ {{ basics.website }} }
+    $\cdot$
+    \href{https://{{ basics.LinkedIn }}}{ {{ basics.LinkedIn }} }
+\end{center}
+
+\vspace{6pt}
+
+% ====================
+% Summary
+% ====================
+
+{% if basics.summary %}
+\noindent
+\textit{ {{ basics.summary | safe }} }
+
+\vspace{8pt}
+{% endif %}
+
+%====================
+% Education
+%====================
+
+\section*{ {{ headings.education }} }
+
+{% for edu in education %}
+
+\textbf{ {{ edu.institution }} }
+\hfill
+{{ edu.startDate }} -- {{ edu.endDate }}
+
+{{ edu.studyType }} {{ edu.area }}
+\hfill
+GPA: {{ edu.gpa }}
+
+{{ edu.location }}
+
+\vspace{4pt}
+
+{% endfor %}
+
+%====================
+% Experience
+%====================
+
+\section*{ {{ headings.work }} }
+
+{% for job in work %}
+
+\textbf{ {{ job.company }} }
+\hfill
+{{ job.startDate }} -- {{ job.endDate }}
+
+\textit{ {{ job.position }} }
+\hfill
+{{ job.location }}
+
+\begin{itemize}[
+    leftmargin=2em,
+    itemsep=2pt,
+    topsep=3pt,
+    label=\Large$\bullet$
+]
+
+{% for bullet in job.highlights %}
+    \item {{ bullet | safe }}
+{% endfor %}
+
+\end{itemize}
+
+\vspace{2pt}
+
+{% endfor %}
+
+%====================
+% Awards
+%====================
+
+\section*{ {{ headings.awards }} }
+
+{% for award in awards %}
+
+\textbf{ {{ award.title }} }
+\hfill
+{{ award.date }}
+
+{{ award.summary }}
+\hfill
+\textit{ {{ award.awarder }} }
+
+\vspace{4pt}
+
+{% endfor %}
+
+%====================
+% Projects
+%====================
+
+\section*{ {{ headings.projects }} }
+
+{% for project in projects %}
+
+\textbf{ {{ project.name }} }
+
+{% if project.keywords %}
+\textit{ {{ project.keywords | join(', ') }} }
+{% endif %}
+
+{% if project.url %}
+\href{https://{{ project.url }}}{ {{ project.url }} }
+{% endif %}
+
+{{ project.description | safe }}
+
+\vspace{4pt}
+
+{% endfor %}
+
+%====================
+% Skills
+%====================
+
+\section*{ {{ headings.skills }} }
+
+{% for skill in skills %}
+
+\textbf{ {{ skill.name }}: }
+{{ skill.keywords | join(', ') | safe }}
+
+\vspace{2pt}
+
+{% endfor %}
+
+\end{document}

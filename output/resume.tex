@@ -1,0 +1,305 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontspec}
+\usepackage{xcolor}
+
+%====================
+% Font & Layout
+%====================
+
+\setmainfont{Times New Roman}
+
+\setlength{\parindent}{0pt}
+\linespread{0.96}
+
+\tolerance=1500
+\emergencystretch=1em
+\hyphenpenalty=800
+\hbadness=10000
+
+\pagenumbering{gobble}
+
+%====================
+% Keyword Highlight
+%====================
+
+\newcommand{\keyword}[1]{\textbf{\textsc{#1}}}
+
+%====================
+% Section Styling
+%====================
+
+\titleformat{\section}
+{\large\scshape}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\section}
+{0pt}
+{6pt}
+{3pt}
+
+%====================
+% Document
+%====================
+
+\begin{document}
+
+%====================
+% Header
+%====================
+
+\begin{center}
+    {\LARGE \textbf{ Mai Hai Dang }} \\
+    \vspace{4pt}
+
+    Hanoi, VN
+    $\cdot$
+    vivarium69420@gmail.com
+    $\cdot$
+    0988 998 739
+    $\cdot$
+    \href{https://github.com/vivarium69420}{ github.com/vivarium69420 }
+    $\cdot$
+    \href{https://https://www.linkedin.com/in/vivarium69420}{ https://www.linkedin.com/in/vivarium69420 }
+\end{center}
+
+\vspace{6pt}
+
+% ====================
+% Summary
+% ====================
+
+\noindent
+\textit{ Embedded Software Engineer with hands-on experience in automotive systems and AUTOSAR-based development. Skilled in ECU communication, diagnostic services (UDS/DCM), and in-vehicle networks including CAN, LIN, and Ethernet. Experienced in developing, testing, and validating software across IVI (In-Vehicle Infotainment) and powertrain platforms using industry tools such as Vector CANoe/CANalyzer and ETAS INCA. Strong understanding of ASPICE processes and automotive standards including ISO 26262 and MISRA C. }
+
+\vspace{8pt}
+
+%====================
+% Education
+%====================
+
+\section*{ Education }
+
+
+\textbf{ University of Science and Technology of Hanoi (USTH) }
+\hfill
+Oct 2021 -- Dec 2024
+
+Bachelor Information and Communication Technology
+\hfill
+GPA: 3.5
+
+18 Hoang Quoc Viet, Cau Giay, Hanoi
+
+\vspace{4pt}
+
+
+%====================
+% Experience
+%====================
+
+\section*{ Experience }
+
+
+\textbf{ FPT Software }
+\hfill
+Dec 2024 -- Present
+
+\textit{ Embedded Software Engineer }
+\hfill
+Hoa Lac Hi-Tech Park, Thach That, Hanoi, Vietnam
+
+\begin{itemize}[
+    leftmargin=2em,
+    itemsep=2pt,
+    topsep=3pt,
+    label=\Large$\bullet$
+]
+
+    \item Designed, implemented, and maintained IVI systems in automotive platforms application-level features including media, navigation, connectivity, Head-up Display (HUD), and Meter Display.
+    \item Debugged, tested, and validated software on real hardware, debug boards, and simulators to improve stability and reduce defect rates. Tools used: Vector CANalyzer, Vector CANoe, and Green Hills MULTI.
+    \item Produced and maintained ASPICE SWE.1–SWE.5 compliant documentation for software modules, including software requirements, architectural and detailed design artifacts, integration documentation, and verification reports to ensure full lifecycle traceability.
+    \item Work with CAN, Ethernet, LIN and other automotive communication protocols for module implementation.
+    \item Ensured compliance with ASPICE SWE process standards; actively contributed in Agile and Scrum workflows.
+
+\end{itemize}
+
+\vspace{2pt}
+
+
+\textbf{ Bosch Global Software Technologies Co., Ltd (BGSV) }
+\hfill
+Apr 2024 -- Sep 2024
+
+\textit{ Embedded Software Engineer  }
+\hfill
+29 Lieu Giai, Ba Dinh, Hanoi
+
+\begin{itemize}[
+    leftmargin=2em,
+    itemsep=2pt,
+    topsep=3pt,
+    label=\Large$\bullet$
+]
+
+    \item Projects: Vinfast VF3/VF8/VF9 EV Powertrain System.
+    \item Developing AUTOSAR-compliant (R4.4.0) embedded software for diagnostic communication on CAN bus and DCM in the Powertrain System. Configuring CAN gateways to enable in-vehicle communication to other ECUs such as the chasis and body control.
+    \item Creating automated functional software testing packages using Tracetonic ecu.test, ETAS INCA, and Vector CANalyzer. Conducting unit testing with Testwell CTC++. Performing integration test for new software components.
+    \item Following strictly ASPICE for SWE process group. Adhering to ISO 14229-1:2020, ISO 11898-1:2024, ISO 26262-2:2018, ISO 15765-2:2024, MISRA C:2024 and ASAM AE MDX, MCD-2 MC.
+
+\end{itemize}
+
+\vspace{2pt}
+
+
+\textbf{ USTH Learning Support }
+\hfill
+Dec 2021 -- Oct 2023
+
+\textit{ Operations Manager and ICT Specialist }
+\hfill
+18 Hoang Quoc Viet, Cau Giay, Hanoi
+
+\begin{itemize}[
+    leftmargin=2em,
+    itemsep=2pt,
+    topsep=3pt,
+    label=\Large$\bullet$
+]
+
+    \item Effectively managing a team of 20 individuals with diverse scientific backgrounds. Securing recognition as the university's top contributor to student academic success.
+    \item Offering comprehensive academic support to ICT students, focusing on core concepts like data structures and algorithms, OOP, software engineering, networking, web development, AI,  and more.
+
+\end{itemize}
+
+\vspace{2pt}
+
+
+%====================
+% Awards
+%====================
+
+\section*{ Awards }
+
+
+\textbf{ Bachelor's Degree with Distinction }
+\hfill
+Dec 2024
+
+Bachelor's degree with Distinction in Information and Communication Technology.
+\hfill
+\textit{ USTH }
+
+\vspace{4pt}
+
+
+\textbf{ Internship Scholarship }
+\hfill
+Oct 2023
+
+Level: A2, second-highest level. Top 6 percent of the university.
+\hfill
+\textit{ USTH }
+
+\vspace{4pt}
+
+
+\textbf{ Merit Scholarship B1 }
+\hfill
+Oct 2022
+
+Level A5. Top 10 percent of the university's General Education Department.
+\hfill
+\textit{ USTH }
+
+\vspace{4pt}
+
+
+\textbf{ Merit Scholarship B2 }
+\hfill
+Oct 2023
+
+Level A5. Top 8 percent of the university's Information and Communication Technology Department.
+\hfill
+\textit{ USTH }
+
+\vspace{4pt}
+
+
+%====================
+% Projects
+%====================
+
+\section*{ Projects }
+
+
+\textbf{ Embedded Software for Control and Communication in Powertrain System }
+
+\textit{ | C, RTA-CAR }
+
+
+Configuring the base software modules of AUTOSAR to enable CAN communication, integrate UDS services with the DCM module, and manage non-volatile memory using NVRAM Manager. Implementing the application software for data processing of DID used by RDBI and WDBI services.
+
+\vspace{4pt}
+
+
+\textbf{ Web Application for Model Management for Crop Nutrition }
+
+\textit{ / React, Typescript, Vite, Tailwind }
+
+\href{https://github.com/ChloroProject-2023/dashboard-UI}{ github.com/ChloroProject-2023/dashboard-UI }
+
+Online platform interface for bioinformatic scientists to share machine learning models and datasets for predicting NPK values for rice crop using hyperspectral images and reflectance data. Support train and inference directly on the website.
+
+\vspace{4pt}
+
+
+\textbf{ Taxi Information Management System }
+
+\textit{ Python }
+
+\href{https://github.com/Vivarium69420/Taxi-Information-Management-System}{ github.com/Vivarium69420/Taxi-Information-Management-System }
+
+A straightforward system for management of customers, invoices, vehicles, and taxi drivers information.
+
+\vspace{4pt}
+
+
+%====================
+% Skills
+%====================
+
+\section*{ Skills }
+
+
+\textbf{ Programming Language: }
+Java, Python, C/ C++, JavaScript/ TypeScript, Bash
+
+\vspace{2pt}
+
+
+\textbf{ Frameworks: }
+AUTOSAR, React, Android SDK, Scikit-learn
+
+\vspace{2pt}
+
+
+\textbf{ Databases: }
+MariaDB, MySQL, MongoDB
+
+\vspace{2pt}
+
+
+\textbf{ Natural Languages: }
+English (B2), French (A2), Vietnamese (Native)
+
+\vspace{2pt}
+
+
+\end{document}
