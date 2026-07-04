@@ -11,7 +11,7 @@
 % Font & Layout
 %====================
 
-\setmainfont{Times New Roman}
+\setmainfont{DejaVu Serif}
 
 \setlength{\parindent}{0pt}
 \linespread{0.96}
@@ -83,28 +83,6 @@
 {% endif %}
 
 %====================
-% Education
-%====================
-
-\section*{ {{ headings.education }} }
-
-{% for edu in education %}
-
-\textbf{ {{ edu.institution }} }
-\hfill
-{{ edu.startDate }} -- {{ edu.endDate }}
-
-{{ edu.studyType }} {{ edu.area }}
-\hfill
-GPA: {{ edu.gpa }}
-
-{{ edu.location }}
-
-\vspace{4pt}
-
-{% endfor %}
-
-%====================
 % Experience
 %====================
 
@@ -136,6 +114,29 @@ GPA: {{ edu.gpa }}
 \vspace{2pt}
 
 {% endfor %}
+
+%====================
+% Education
+%====================
+
+\section*{ {{ headings.education }} }
+
+{% for edu in education %}
+
+\textbf{ {{ edu.institution }} }
+\hfill
+{{ edu.startDate }} -- {{ edu.endDate }}
+
+{{ edu.studyType }} {{ edu.area }}
+\hfill
+GPA: {{ edu.gpa }}
+
+{{ edu.location }}
+
+\vspace{4pt}
+
+{% endfor %}
+
 
 %====================
 % Awards
